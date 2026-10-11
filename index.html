@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Boussole Tutorat | Tutorat à domicile à Orléans (Ottawa)</title>
+  <meta name="description" content="Tutorat à domicile en français, mathématiques et sciences sociales, de la maternelle à la 12e année, à Orléans et dans l'est d'Ottawa. Enseignants qualifiés, programme de l'Ontario.">
+  <meta name="theme-color" content="#1e3a35">
+
+  <!-- Aperçu lors d'un partage (Facebook, LinkedIn, messageries) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Boussole Tutorat | Tutorat à domicile à Orléans">
+  <meta property="og:description" content="Français, mathématiques et sciences sociales, de la maternelle à la 12e année, chez vous.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231e3a35'/%3E%3Cpath d='M16 5l3 11h-6z' fill='%23e2b341'/%3E%3Cpath d='M16 27l3-11h-6z' fill='%23eef3ee'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/motion.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Données structurées pour les moteurs de recherche (uniquement des infos présentes sur le site) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Boussole Tutorat",
+    "description": "Tutorat à domicile en français, mathématiques et sciences sociales, de la maternelle à la 12e année.",
+    "telephone": "+1-613-697-7607",
+    "email": "Stingo@yahoo.fr",
+    "areaServed": "Orléans et l'est d'Ottawa, Ontario",
+    "address": { "@type": "PostalAddress", "addressLocality": "Orléans", "addressRegion": "ON", "addressCountry": "CA" }
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="topbar" id="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#accueil" aria-label="Boussole Tutorat, retour à l'accueil">
+      <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="currentColor" stroke-width="2"/><g class="mini-needle"><path d="M15 4 L18 15 L12 15Z" fill="#e2b341"/><path d="M15 26 L18 15 L12 15Z" fill="currentColor"/></g></svg>
+      Boussole <span>Tutorat</span>
+    </a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Navigation principale">
+      <ul class="menu" id="menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#volets">Matières</a></li>
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#approche">Approche</a></li>
+        <li><a href="#equipe">Notre équipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ===== Accueil / ardoise ===== -->
+<section class="board" id="accueil" aria-labelledby="titre-accueil">
+  <canvas id="chalk" aria-hidden="true"></canvas>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Tutorat à domicile · Orléans (Ottawa)</div>
+      <h1 id="titre-accueil">Français, mathématiques et sciences sociales, de la maternelle au secondaire, <em>chez vous</em>.</h1>
+      <p class="lead">Notre équipe d'enseignants qualifiés accompagne les élèves de la maternelle à la 12<sup>e</sup> année pour combler leurs lacunes, gagner en confiance et réussir leurs évaluations, en lien avec le curriculum de l'Ontario.</p>
+      <p class="typed" aria-hidden="true"><span id="typed">Réviser les fonctions avant l'examen</span><span class="caret"></span></p>
+      <div class="ctas">
+        <a class="btn primary" href="#contact">Réserver une première rencontre</a>
+        <a class="btn ghost" href="#volets">Voir les matières</a>
+      </div>
+    </div>
+    <div class="compass-wrap">
+      <svg class="compass" viewBox="0 0 320 320" role="img" aria-label="Boussole pointant vers les matières : Français, Mathématiques, Sciences sociales et Réussite">
+        <circle class="ring2" cx="160" cy="160" r="150"/>
+        <circle class="ring" cx="160" cy="160" r="128"/>
+        <g id="dial"></g>
+        <text class="lbl" data-a="0" data-target="volets" tabindex="0" role="link" x="160" y="58">Français</text>
+        <text class="lbl" data-a="90" data-target="volets" tabindex="0" role="link" x="255" y="165">Maths</text>
+        <text class="lbl" data-a="180" data-target="approche" tabindex="0" role="link" x="160" y="272">Réussite</text>
+        <text class="lbl" data-a="270" data-target="volets" tabindex="0" role="link" aria-label="Sciences sociales" x="68" y="158">Sciences</text>
+        <text class="lbl" data-a="270" data-target="volets" aria-hidden="true" x="68" y="174">sociales</text>
+        <g id="needle"><g id="wob">
+          <path class="n" d="M160 70 L171 160 L149 160Z"/>
+          <path class="s" d="M160 250 L171 160 L149 160Z" opacity=".85"/>
+          <circle class="hub" cx="160" cy="160" r="10"/>
+        </g></g>
+      </svg>
+      <p class="compass-cap">Survolez une matière : la boussole s'oriente.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="creds">
+    <div><b>Enseignants qualifiés</b><span>Dont des membres agréés de l'OEEO</span></div>
+    <div><b>Expérience réelle</b><span>Au secondaire et en formation des maîtres</span></div>
+    <div><b>Formation universitaire</b><span>Lettres, mathématiques, sciences sociales</span></div>
+    <div><b>100 % en français</b><span>À domicile, à Orléans et environs</span></div>
+  </div>
+</div>
+
+<!-- ===== Matières ===== -->
+<section class="block" id="volets" aria-labelledby="titre-volets">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div class="label">Matières offertes</div>
+      <h2 id="titre-volets">Trois volets, un même cap : la réussite de votre enfant</h2>
+      <p>Chaque séance suit le programme-cadre de l'Ontario et le travail donné en classe. Les codes ci-dessous sont ceux des cours du secondaire ontarien.</p>
+    </div>
+    <div class="volets">
+
+      <article class="volet rise" data-a="0">
+        <div class="illus">
+          <svg viewBox="0 0 280 150" aria-hidden="true">
+            <path class="ch" d="M140 120 C110 108 80 108 50 116 L50 46 C80 38 110 38 140 50Z"/>
+            <path class="ch" d="M140 120 C170 108 200 108 230 116 L230 46 C200 38 170 38 140 50Z"/>
+            <g class="page-turn"><path class="ch-dim" d="M140 50 C165 42 190 42 214 48 L214 110 C190 104 165 104 140 114Z"/></g>
+            <path class="ch-dim" d="M64 62 H122 M64 74 H118 M64 86 H124 M64 98 H112"/>
+            <text class="fly" x="78" y="44" style="--d:0s">é</text>
+            <text class="fly g" x="118" y="40" style="--d:1s">Aa</text>
+            <text class="fly" x="168" y="42" style="--d:2s">ç</text>
+            <text class="fly g" x="200" y="44" style="--d:3s">«»</text>
+          </svg>
+        </div>
+        <div class="volet-body">
+          <h3>Français</h3>
+          <p>Lecture, écriture et communication orale, avec une attention particulière à la grammaire et à la structure des textes.</p>
+          <ul>
+            <li><span class="code">MAT-JAR</span>Éveil au langage, sons et lettres</li>
+            <li><span class="code">1re–8e</span>Lecture, écriture, grammaire, oral</li>
+            <li><span class="code">9e–10e</span>Cours de français et préparation au TPCL</li>
+            <li><span class="code">FRA3U–4U</span>Analyse littéraire et dissertation</li>
+          </ul>
+          <a class="more" href="#programme" data-level="0">Voir le programme détaillé →</a>
+        </div>
+      </article>
+
+      <article class="volet rise" data-a="90">
+        <div class="illus">
+          <svg viewBox="0 0 280 150" aria-hidden="true">
+            <path class="ch-dim" d="M40 30 V130 M30 120 H250"/>
+            <path class="ch-dim" d="M70 125 V115 M110 125 V115 M150 125 V115 M190 125 V115 M230 125 V115"/>
+            <path id="para" class="gold draw" d="M60 24 Q145 210 230 24"/>
+            <circle class="dot" r="6"><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#para"/></animateMotion></circle>
+            <text x="200" y="60" fill="#eef3ee" font-family="JetBrains Mono, monospace" font-size="13">y = x²</text>
+          </svg>
+        </div>
+        <div class="volet-body">
+          <h3>Mathématiques</h3>
+          <p>Méthodes claires, exercices gradués et révision ciblée avant les tests et examens.</p>
+          <ul>
+            <li><span class="code">MAT-JAR</span>Dénombrer, formes, régularités</li>
+            <li><span class="code">1re–8e</span>Nombres, algèbre et codage, données, espace</li>
+            <li><span class="code">MTH1W</span>Mathématiques de 9<sup>e</sup> année</li>
+            <li><span class="code">MHF4U</span>Jusqu'aux fonctions avancées et au calcul</li>
+          </ul>
+          <a class="more" href="#programme" data-level="0">Voir le programme détaillé →</a>
+        </div>
+      </article>
+
+      <article class="volet rise" data-a="270">
+        <div class="illus">
+          <svg viewBox="0 0 280 150" aria-hidden="true">
+            <circle class="ch" cx="140" cy="75" r="52"/>
+            <ellipse class="ch-dim" cx="140" cy="75" rx="52" ry="16"/>
+            <path class="ch-dim" d="M88 75 H192"/>
+            <ellipse class="ch-dim" cx="140" cy="75" rx="40" ry="52"><animate attributeName="rx" values="52;0;52" dur="6s" repeatCount="indefinite"/></ellipse>
+            <ellipse class="ch-dim" cx="140" cy="75" rx="20" ry="52"><animate attributeName="rx" values="0;52;0" dur="6s" repeatCount="indefinite"/></ellipse>
+            <circle class="dot" r="5"><animateMotion dur="7s" repeatCount="indefinite" path="M140 9 A66 66 0 1 1 139.9 9"/></circle>
+            <g class="pin"><path d="M172 44 c0-9 7-14 13-14 s13 5 13 14 c0 10-13 24-13 24 s-13-14-13-24Z" fill="#e2b341"/><circle cx="185" cy="44" r="4.5" fill="#1e3a35"/></g>
+          </svg>
+        </div>
+        <div class="volet-body">
+          <span class="tag">Volet sciences sociales</span>
+          <h3>Sciences sociales et humaines</h3>
+          <p>Un volet porté par des enseignants formés en sciences sociales et en anthropologie. Nous aidons les élèves à comprendre, analyser et rédiger en histoire, géographie et sciences humaines.</p>
+          <ul>
+            <li><span class="code">CHC2D</span>Histoire du Canada depuis la Première Guerre mondiale</li>
+            <li><span class="code">CGC1W</span>Géographie du Canada</li>
+            <li><span class="code">CHV2O</span>Civisme et citoyenneté</li>
+            <li><span class="code">HSP3U</span>Initiation à l'anthropologie, à la psychologie et à la sociologie</li>
+          </ul>
+          <a class="more" href="#contact">Demander une séance de sciences sociales →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Programme détaillé ===== -->
+<section class="block prog" id="programme" aria-labelledby="titre-programme">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div class="label">Programme détaillé</div>
+      <h2 id="titre-programme">Français et mathématiques, de la maternelle à la 12<sup>e</sup> année</h2>
+      <p>Nos séances suivent les programmes-cadres du ministère de l'Éducation de l'Ontario. Choisissez le niveau de votre enfant.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Niveaux scolaires">
+      <button type="button" role="tab" id="t0" aria-controls="p0" aria-selected="true" tabindex="0"><span class="tab-title">Maternelle et jardin</span><small>4–5 ans</small></button>
+      <button type="button" role="tab" id="t1" aria-controls="p1" aria-selected="false" tabindex="-1"><span class="tab-title">1<sup>re</sup> à 3<sup>e</sup> année</span><small>Cycle primaire</small></button>
+      <button type="button" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="tab-title">4<sup>e</sup> à 6<sup>e</sup> année</span><small>Cycle moyen</small></button>
+      <button type="button" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="tab-title">7<sup>e</sup> et 8<sup>e</sup> année</span><small>Cycle intermédiaire</small></button>
+      <button type="button" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="tab-title">9<sup>e</sup> et 10<sup>e</sup> année</span><small>Secondaire</small></button>
+      <button type="button" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><span class="tab-title">11<sup>e</sup> et 12<sup>e</sup> année</span><small>Secondaire</small></button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p0" aria-labelledby="t0" tabindex="0">
+      <div class="panel-head"><h3>Maternelle et jardin d'enfants</h3><p>Programme de la maternelle et du jardin d'enfants : apprentissage par le jeu et l'enquête, organisé en quatre domaines (appartenance et contribution, autorégulation et bien-être, comportements en littératie et en mathématiques, résolution de problèmes et innovation).</p></div>
+      <div class="cols">
+        <div class="col"><h4><span class="ico" aria-hidden="true">Aa</span>Français</h4><span class="src">Programme de la maternelle et du jardin d'enfants</span>
+          <ul>
+            <li><span>Éveil au langage oral et enrichissement du vocabulaire</span></li>
+            <li><span>Conscience phonologique : rimes, syllabes, sons</span></li>
+            <li><span>Reconnaissance des lettres et de leur son</span></li>
+            <li><span>Premiers écrits : écrire son prénom, des mots familiers</span></li>
+            <li><span>Plaisir de la lecture partagée et compréhension d'histoires</span></li>
+          </ul>
+        </div>
+        <div class="col"><h4><span class="ico" aria-hidden="true">∑</span>Mathématiques</h4><span class="src">Programme de la maternelle et du jardin d'enfants</span>
+          <ul>
+            <li><span>Compter, dénombrer et comparer des quantités</span></li>
+            <li><span>Reconnaître et décrire les formes géométriques</span></li>
+            <li><span>Repérer et prolonger des suites et des régularités</span></li>
+            <li><span>Comparer et mesurer (plus long, plus lourd…)</span></li>
+            <li><span>Résoudre de petits problèmes par le jeu et la manipulation</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Les séances respectent le rythme des tout-petits : courtes, ludiques, avec du matériel concret.</p>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1" tabindex="0" hidden>
+      <div class="panel-head"><h3>Cycle primaire, 1<sup>re</sup> à 3<sup>e</sup> année</h3><p>Les bases de la lecture, de l'écriture et du calcul, selon les programmes-cadres de français (2023) et de mathématiques (2020).</p></div>
+      <div class="cols">
+        <div class="col"><h4><span class="ico" aria-hidden="true">Aa</span>Français</h4><span class="src">Programme-cadre de français, 1<sup>re</sup> à 8<sup>e</sup> année (2023)</span>
+          <ul>
+            <li><span>Correspondance lettres-sons et décodage</span></li>
+            <li><span>Fluidité de lecture et compréhension de textes variés</span></li>
+            <li><span>Écriture de phrases, puis de courts textes</span></li>
+            <li><span>Orthographe d'usage et premiers accords (nom, adjectif, verbe)</span></li>
+            <li><span>Communication orale : écouter, raconter, présenter</span></li>
+          </ul>
+        </div>
+        <div class="col"><h4><span class="ico" aria-hidden="true">∑</span>Mathématiques</h4><span class="src">Programme-cadre de mathématiques, 1<sup>re</sup> à 8<sup>e</sup> année (2020)</span>
+          <ul>
+            <li><span>Nombres jusqu'à 1 000, valeur de position</span></li>
+            <li><span>Addition, soustraction, sens de la multiplication et de la division</span></li>
+            <li><span>Fractions simples</span></li>
+            <li><span>Régularités et premières notions de codage</span></li>
+            <li><span>Données (diagrammes), formes, mesure et monnaie</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note"><b>Évaluation de l'OQRE en 3<sup>e</sup> année</b> (lecture, écriture, mathématiques) : préparation possible.</p>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" tabindex="0" hidden>
+      <div class="panel-head"><h3>Cycle moyen, 4<sup>e</sup> à 6<sup>e</sup> année</h3><p>Consolider les acquis et développer l'autonomie : stratégies de lecture, rédaction structurée, raisonnement mathématique.</p></div>
+      <div class="cols">
+        <div class="col"><h4><span class="ico" aria-hidden="true">Aa</span>Français</h4><span class="src">Programme-cadre de français, 1<sup>re</sup> à 8<sup>e</sup> année (2023)</span>
+          <ul>
+            <li><span>Stratégies de lecture : inférer, résumer, justifier</span></li>
+            <li><span>Textes narratifs, informatifs et argumentatifs courts</span></li>
+            <li><span>Grammaire : classes de mots, accords, conjugaison</span></li>
+            <li><span>Vocabulaire et orthographe</span></li>
+            <li><span>Exposés oraux, recherche et littératie numérique</span></li>
+          </ul>
+        </div>
+        <div class="col"><h4><span class="ico" aria-hidden="true">∑</span>Mathématiques</h4><span class="src">Programme-cadre de mathématiques, 1<sup>re</sup> à 8<sup>e</sup> année (2020)</span>
+          <ul>
+            <li><span>Grands nombres, nombres décimaux et fractions</span></li>
+            <li><span>Multiplication et division à plusieurs chiffres</span></li>
+            <li><span>Rapports, taux et pourcentages</span></li>
+            <li><span>Équations simples et codage (boucles, conditions)</span></li>
+            <li><span>Données, probabilité, aire, volume, angles et littératie financière</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note"><b>Évaluation de l'OQRE en 6<sup>e</sup> année</b> (lecture, écriture, mathématiques) : préparation possible.</p>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" tabindex="0" hidden>
+      <div class="panel-head"><h3>Cycle intermédiaire, 7<sup>e</sup> et 8<sup>e</sup> année</h3><p>Préparer l'entrée au secondaire : pensée critique, écriture argumentée, algèbre et raisonnement proportionnel.</p></div>
+      <div class="cols">
+        <div class="col"><h4><span class="ico" aria-hidden="true">Aa</span>Français</h4><span class="src">Programme-cadre de français, 1<sup>re</sup> à 8<sup>e</sup> année (2023)</span>
+          <ul>
+            <li><span>Analyse de textes littéraires et médiatiques</span></li>
+            <li><span>Texte argumentatif structuré : thèse, arguments, exemples</span></li>
+            <li><span>Syntaxe et accords avancés (participe passé)</span></li>
+            <li><span>Présentation orale et débat</span></li>
+            <li><span>Méthodes de travail pour le secondaire</span></li>
+          </ul>
+        </div>
+        <div class="col"><h4><span class="ico" aria-hidden="true">∑</span>Mathématiques</h4><span class="src">Programme-cadre de mathématiques, 1<sup>re</sup> à 8<sup>e</sup> année (2020)</span>
+          <ul>
+            <li><span>Nombres entiers relatifs et nombres rationnels</span></li>
+            <li><span>Puissances, racines carrées, notation scientifique</span></li>
+            <li><span>Équations, inégalités et relations linéaires</span></li>
+            <li><span>Théorème de Pythagore, aire et volume (cylindres, prismes)</span></li>
+            <li><span>Statistiques, codage, intérêts et budget</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Une bonne préparation en 8<sup>e</sup> année facilite le passage au cours de mathématiques de 9<sup>e</sup> année (MTH1W).</p>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" tabindex="0" hidden>
+      <div class="panel-head"><h3>Secondaire, 9<sup>e</sup> et 10<sup>e</sup> année</h3><p>Les deux premières années du secondaire, selon les programmes-cadres de français et de mathématiques de l'Ontario.</p></div>
+      <div class="cols">
+        <div class="col"><h4><span class="ico" aria-hidden="true">Aa</span>Français</h4><span class="src">Programmes-cadres de français du secondaire</span>
+          <ul>
+            <li class="c"><span class="code">9<sup>e</sup></span><span>Français, 9<sup>e</sup> année : lecture, écriture, communication orale</span></li>
+            <li class="c"><span class="code">FRA2D</span><span>Français, 10<sup>e</sup> année, théorique</span></li>
+            <li class="c"><span class="code">FRA2P</span><span>Français, 10<sup>e</sup> année, appliqué</span></li>
+            <li class="c"><span class="code">TPCL</span><span>Préparation au Test provincial de compétences linguistiques</span></li>
+          </ul>
+        </div>
+        <div class="col"><h4><span class="ico" aria-hidden="true">∑</span>Mathématiques</h4><span class="src">Programmes-cadres de mathématiques du secondaire</span>
+          <ul>
+            <li class="c"><span class="code">MTH1W</span><span>Mathématiques, 9<sup>e</sup> année : nombres, algèbre, codage, données, géométrie, littératie financière</span></li>
+            <li class="c"><span class="code">MPM2D</span><span>Principes de mathématiques : systèmes d'équations, géométrie analytique, fonctions du second degré, trigonométrie</span></li>
+            <li class="c"><span class="code">MFM2P</span><span>Méthodes de mathématiques, 10<sup>e</sup> année, appliqué</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note"><b>Évaluation de l'OQRE en mathématiques de 9<sup>e</sup> année</b> et <b>TPCL en 10<sup>e</sup> année</b> (requis pour le diplôme) : préparation possible.</p>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" tabindex="0" hidden>
+      <div class="panel-head"><h3>Secondaire, 11<sup>e</sup> et 12<sup>e</sup> année</h3><p>Préparer l'université, le collège ou le marché du travail : cours préuniversitaires (U), précollégiaux (C), mixtes (M) et préemploi (E).</p></div>
+      <div class="cols">
+        <div class="col"><h4><span class="ico" aria-hidden="true">Aa</span>Français</h4><span class="src">Programmes-cadres de français du secondaire</span>
+          <ul>
+            <li class="c"><span class="code">FRA3U</span><span>Français, 11<sup>e</sup> année, préuniversitaire</span></li>
+            <li class="c"><span class="code">FRA3C</span><span>Français, 11<sup>e</sup> année, précollégial</span></li>
+            <li class="c"><span class="code">FRA4U</span><span>Français, 12<sup>e</sup> année, préuniversitaire : dissertation, analyse littéraire</span></li>
+            <li class="c"><span class="code">FRA4C</span><span>Français, 12<sup>e</sup> année, précollégial</span></li>
+          </ul>
+        </div>
+        <div class="col"><h4><span class="ico" aria-hidden="true">∑</span>Mathématiques</h4><span class="src">Programmes-cadres de mathématiques du secondaire</span>
+          <ul>
+            <li class="c"><span class="code">MCR3U</span><span>Fonctions, 11<sup>e</sup> année</span></li>
+            <li class="c"><span class="code">MCF3M</span><span>Fonctions et applications, 11<sup>e</sup> année</span></li>
+            <li class="c"><span class="code">MBF3C</span><span>Fondements des mathématiques pour le collège</span></li>
+            <li class="c"><span class="code">MHF4U</span><span>Fonctions avancées, 12<sup>e</sup> année</span></li>
+            <li class="c"><span class="code">MCV4U</span><span>Calcul différentiel et vecteurs</span></li>
+            <li class="c"><span class="code">MDM4U</span><span>Mathématiques de la gestion des données</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Aide à la préparation des examens et des demandes d'admission : les notes de 12<sup>e</sup> année comptent pour l'entrée à l'université et au collège.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Démarche ===== -->
+<section class="block approche" id="approche" aria-labelledby="titre-approche">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div class="label">Comment ça se passe</div>
+      <h2 id="titre-approche">Une démarche simple et suivie</h2>
+    </div>
+    <div class="track" aria-hidden="true"><i></i></div>
+    <div class="steps">
+      <div class="step rise"><div class="num" aria-hidden="true">1</div><h3>Première rencontre</h3><p>Nous rencontrons l'élève et ses parents pour comprendre ses besoins, ses difficultés et ses objectifs.</p></div>
+      <div class="step rise"><div class="num" aria-hidden="true">2</div><h3>Évaluation</h3><p>Un court diagnostic permet de repérer les notions à revoir et celles déjà acquises.</p></div>
+      <div class="step rise"><div class="num" aria-hidden="true">3</div><h3>Séances à domicile</h3><p>Explications, exercices et méthodes de travail, au rythme de l'élève et en lien avec ses cours.</p></div>
+      <div class="step rise"><div class="num" aria-hidden="true">4</div><h3>Suivi avec les parents</h3><p>Un bilan régulier sur les progrès réalisés et les prochaines étapes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Équipe ===== -->
+<section class="block" id="equipe" aria-labelledby="titre-equipe">
+  <div class="wrap">
+    <div class="about">
+      <div class="rise">
+        <figure class="portrait">
+          <div class="ph"><img src="assets/img/portrait.jpg" width="132" height="132" loading="lazy" decoding="async" alt="Portrait d'un enseignant de l'équipe en toge de remise de diplôme"></div>
+          <figcaption><b>Un de nos enseignants</b>Diplômé en sciences de l'éducation et anthropologue</figcaption>
+        </figure>
+        <div class="label">Notre équipe</div>
+        <h2 id="titre-equipe" class="quote">Des enseignants de métier, réunis par une même conviction : apprendre change une vie.</h2>
+        <p>Plusieurs d'entre nous ont formé de futurs enseignants. Nous savons expliquer une notion de plusieurs façons, repérer d'où vient une difficulté et donner à l'élève des méthodes qu'il pourra réutiliser seul. Chaque famille est jumelée à l'enseignant le plus adapté à la matière et au niveau de l'élève.</p>
+      </div>
+      <ol class="timeline rise">
+        <li><div class="y">Accréditation</div><div><b>Membres agréés de l'OEEO</b><span>Enseignants autorisés à enseigner en Ontario</span></div></li>
+        <li><div class="y">Expérience</div><div><b>Enseignement au secondaire</b><span>Plusieurs années en salle de classe</span></div></li>
+        <li><div class="y">Expérience</div><div><b>Formation des maîtres</b><span>Préparation de futurs enseignants en école normale</span></div></li>
+        <li><div class="y">Diplômes</div><div><b>Études supérieures</b><span>Pédagogie, sciences sociales, anthropologie culturelle</span></div></li>
+        <li><div class="y">Langue</div><div><b>Enseignement en français</b><span>Pour les élèves des écoles de langue française</span></div></li>
+      </ol>
+    </div>
+    <div class="qual">
+      <div class="rise"><b>Pédagogues patients</b><span>Habitués à adapter nos explications à chaque profil d'apprenant.</span></div>
+      <div class="rise"><b>Méthode et rigueur</b><span>Des séances structurées, des objectifs clairs, des progrès mesurables.</span></div>
+      <div class="rise"><b>Ouverture culturelle</b><span>Une formation en anthropologie qui nous aide à comprendre chaque élève et sa famille.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="block contact" id="contact" aria-labelledby="titre-contact">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div class="label">Contact</div>
+      <h2 id="titre-contact">Parlons des besoins de votre enfant</h2>
+      <p>Appelez-nous ou écrivez-nous pour fixer une première rencontre. Tarifs et disponibilités sur demande.</p>
+    </div>
+    <div class="cards">
+      <div class="cc rise">
+        <span>Téléphone</span>
+        <div class="v" id="tel">613-697-7607</div>
+        <div class="row"><button type="button" data-copy="tel">Copier</button><a href="tel:+16136977607">Appeler</a></div>
+      </div>
+      <div class="cc rise">
+        <span>Téléphone</span>
+        <div class="v" id="tel">613-581-5295</div>
+        <div class="row"><button type="button" data-copy="tel">Copier</button><a href="tel:+16135815295">Appeler</a></div>
+      </div>
+      <div class="cc rise">
+        <span>Courriel</span>
+        <div class="v" id="mail">Stingo@yahoo.fr</div>
+        <div class="row"><button type="button" data-copy="mail">Copier</button><a href="mailto:Stingo@yahoo.fr">Écrire</a></div>
+      </div>
+    </div>
+    <p class="zone">Secteur desservi : Orléans et l'est d'Ottawa. Séances au domicile de l'élève.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">© 2026 Boussole Tutorat · Équipe d'enseignants qualifiés · Orléans, Ontario</div>
+</footer>
+
+<button class="totop" id="totop" type="button" aria-label="Revenir en haut" hidden>↑</button>
+
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/nav.js" defer></script>
+<script src="assets/js/compass.js" defer></script>
+<script src="assets/js/typed.js" defer></script>
+<script src="assets/js/chalk.js" defer></script>
+<script src="assets/js/reveal.js" defer></script>
+<script src="assets/js/tabs.js" defer></script>
+<script src="assets/js/copy.js" defer></script>
+</body>
+</html>

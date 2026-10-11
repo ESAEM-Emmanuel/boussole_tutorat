@@ -1,0 +1,57 @@
+/* ==========================================================================
+   responsive.css : adaptations tablette et mobile (à charger en dernier)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .compass { width: min(100%, 280px); }
+
+  .creds { grid-template-columns: repeat(2, 1fr); }
+  .creds div:nth-child(2) { border-right: 0; }
+  .creds div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+
+  .volets, .about, .qual { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+
+  .burger { display: block; }
+  .menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: var(--board);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px 18px;
+    border-bottom: 1px solid rgba(238, 243, 238, .12);
+  }
+  .menu.open { display: flex; }
+  .menu a { padding: 12px 14px; }
+}
+
+@media (max-width: 760px) {
+  .cols { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .creds, .cards, .steps { grid-template-columns: 1fr; }
+  .creds div { border-right: 0; border-bottom: 1px solid var(--line); }
+  .creds div:last-child { border-bottom: 0; }
+  .timeline li { grid-template-columns: 1fr; gap: 4px; }
+  .portrait { flex-direction: column; align-items: flex-start; }
+}
+
+/* Onglets du programme : 6 colonnes sur grand écran, défilement horizontal en dessous */
+@media (max-width: 1000px) {
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    margin-inline: -20px;
+    padding: 4px 20px 14px;
+    scrollbar-width: thin;
+  }
+  .tabs button { flex: 0 0 auto; min-width: 150px; scroll-snap-align: start; }
+  .tabs button::after { display: none; }
+}
